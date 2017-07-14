@@ -1,65 +1,228 @@
-@media only screen and (min-width: 480px) {
+
 body {
   font-size: 18px;
   line-height: 1.4;
   font-family: Helvetica;
+  margin: 0;
+  padding: 0;
 }
 header {
-  display: block;
+  display: inline-block;
   background-image: url("../images/glasses-bg.png");
-  background-position: 20%;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 27rem;
+  height: 30rem;
+  width: 100%;
 }
-.logo h2 {
-  display: none;
+@media only screen and (max-width: 1200px){
+header {
+  height: 22rem;
+  }
 }
-.nav .tablet {
-  display: none;
+@media only screen and (max-width: 800px) {
+header {
+  background-position: 20%;
+  height: 17rem;
+  }
 }
 .menu {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
+  margin: 1rem auto;
   background-color: cadetblue;
   color: white;
+  max-width: 960px;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 1200px){
+.menu {
+  margin-top: 0;
+  width: 100%;
+  }
+}
+.logo img {
+  height: 1.5rem;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 2rem;
+}
+.logo span {
+  padding-left: 1rem;
+}
+@media only screen and (max-width: 800px) {
+.logo span {
+  display: none;
+  }
+}
+.nav {
+  display: flex;
+}
+.nav .tablet{
+  padding: 1rem 2rem;
+  float: right;
+}
+@media only screen and (max-width: 800px) {
+.nav .tablet {
+  display: none;
+  }
+}
+.nav .mobile {
+  display: none;
+}
+@media only screen and (max-width: 800px) {
+.nav .mobile {
+  display: inline-block;
+  float: right;
+  padding: 1rem 2rem;
+  }
 }
 .banner {
-  margin-top: 15rem;
+  display: flex;
+  float: right;
+  margin-right: 10rem;
+  margin-top: 5rem;
+  position: relative;
+}
+@media only screen and (max-width: 1200px){
+.banner {
+  margin-right: 2rem;
+  margin-top: 5rem;
+  padding: 0.75rem 4rem;
+  }
+}
+@media only screen and (max-width: 800px) {
+.banner {
+  float: none;
+  width: 100%;
+  margin-top: 9rem;
+  }
+}
+.banner h1{
+  display: inline;
   background-color: white;
-  text-align: center;
+  padding: 1.5rem 5rem;
+  width: 100%;
+
+}
+@media only screen and (max-width: 1200px){
+.banner h1 {
+  font-size: 1.33rem;
+  }
+}
+@media only screen and (max-width: 800px){
+.banner h1 {
+  display: block;
+  font-size: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 100%;
+  }
 }
 .main {
-  margin-top: 3.77rem;
+  display: flex;
+  justify-content: space-around;
+  margin: 3rem auto;
+  width: 960px;
   text-align: center;
+}
+@media only screen and (max-width: 800px) {
+.main {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3.77rem;
+  margin-bottom: 3.77rem;
   font-size: 0.77rem;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  }
+}
+.services {
+  height: 8rem;
+  width: 5rem;
+}
+@media only screen and (max-width: 800px) {
+.services {
+  display: block;
   padding: 1.54rem;
-
+  margin: auto;
+  }
+}
+.services img {
+  width: 5rem;
+}
+.container {
+  display: flex;
+  width: 960px;
+  text-align: center;
+  margin: 3rem auto;
+  position: relative;
+}
+@media only screen and (max-width: 800px) {
+.container {
+  width: 100;
+  flex-direction: column;
+  }
 }
 .additional {
-
+  display: inline-block;
+  width: 35%;
+  float: auto;
+  padding: 5%;
+  text-align: left;
+}
+@media only screen and (max-width: 800px) {
+  .additional {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
 }
 .additional h2 {
   background-color: cadetblue;
   color: white;
   text-align: center;
-  padding: 0.5rem;
+  width: 10rem;
+  font-size: 1rem;
+  font-style: bold;
+  padding: 0.5rem 1.25rem;
 }
-p {
+@media only screen and (max-width: 800px) {
+.additional h2 {
+  display: block;
+  margin: auto;
+  width: 100%;
+  }
+}
+@media only screen and (max-width: 800px) {
+.additional p {
   font-size: 0.77rem;
   margin-top: 1rem;
-  margin-bottom: 6rem;
-}
-footer h2{
-  display: none;
+  margin-bottom: 4rem;
+  }
 }
 footer {
   display: flex;
-  background-color: cadetblue;
+  background-color: azure;
   height: 8rem;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  padding: 4rem;
+}
+footer img {
+  height: 1.5rem;
+}
+@media only screen and (max-width: 800px) {
+  footer  {
+    justify-content: center;
+  }
+}
+footer p {
+  padding-left: 1rem;
+}
+@media only screen and (max-width: 800px) {
+footer p {
+  display: none;
 }
 }
