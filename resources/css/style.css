@@ -93,9 +93,10 @@ header {
 }
 @media only screen and (max-width: 800px) {
 .banner {
-  float: none;
+  display: block;
   width: 100%;
   margin-top: 9rem;
+  text-align: center;
   }
 }
 .banner h1{
